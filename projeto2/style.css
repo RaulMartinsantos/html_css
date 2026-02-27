@@ -1,24 +1,99 @@
 @charset "UTF-8";
 
 :root {
-  --cor-de-fundo: #573824;
+  --cor-de-fundo: #573824ad;
   --surface-color: #f0e8c2;
 
   --cor-do-texto-primaria: #291b1a;
   --cor-do-texto-secundaria: #573a37;
   --cor-do-texto-bg: #f0e8c2;
+
+  --heading1-size: 40px;
+  --heading1-line: 140%;
+  --heading1-weight: 400;
+
+  --heading2-size: 24px;
+  --heading2-line: 150%;
+  --heading2-weight: 400;
+
+  --paragrafo-size: 16px;
+  --paragrafo-line: 140%;
+  --paragrafo-weight: 400;
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  height: 100dvh;
+  font-family: Alice, Helvetica, sans-serif;
+
+  min-height: 100dvh;
   width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+  width: 100%;
+  position: relative;
+
+  padding-bottom: 30px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(var(--cor-de-fundo), var(--cor-de-fundo)),
+    url("imagens/cupca.jpg") center/cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+  inset: -20px;
+}
+
+main {
+  background-color: var(--surface-color);
+  width: 700px;
+
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+
+  padding: 30px;
+}
+
+h1 {
+  font-weight: var(--heading1-weight);
+  font-size: var(--heading1-size);
+  line-height: var(--heading1-line);
+}
+
+h2 {
+  padding-bottom: 16px;
 }
 
 main img {
-  width: 500px;
+  display: block;
+  margin: auto;
+  width: 650px;
+  height: 400px;
+  border-radius: 7px;
+  margin-bottom: 40px;
+}
+
+p,
+li {
+  font-weight: var(--paragrafo-weight);
+  font-size: var(--paragrafo-size);
+  line-height: var(--paragrafo-line);
+}
+
+ul {
+  padding-left: 40px;
+}
+
+div.container {
+  padding-bottom: 15px;
 }
