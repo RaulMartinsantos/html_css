@@ -33,9 +33,6 @@ body {
   min-height: 100dvh;
   width: 100%;
   position: relative;
-  padding-bottom: 30px;
-  width: 100%;
-  position: relative;
 
   padding-bottom: 30px;
 }
@@ -74,6 +71,19 @@ h2 {
   padding-bottom: 16px;
 }
 
+h1,
+h2 {
+  color: var(--cor-do-texto-primaria);
+}
+
+p,
+li {
+  color: var(--cor-do-texto-secundaria);
+  font-weight: var(--paragrafo-weight);
+  font-size: var(--paragrafo-size);
+  line-height: var(--paragrafo-line);
+}
+
 main img {
   display: block;
   margin: auto;
@@ -81,13 +91,6 @@ main img {
   height: 400px;
   border-radius: 7px;
   margin-bottom: 40px;
-}
-
-p,
-li {
-  font-weight: var(--paragrafo-weight);
-  font-size: var(--paragrafo-size);
-  line-height: var(--paragrafo-line);
 }
 
 ul {
