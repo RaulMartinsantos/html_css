@@ -1,0 +1,21 @@
+:root {
+  --brand-color: #ef5f4c;
+
+  --heading1-size: 32px;
+  --heading1-line: 125%;
+  --heading1-weight: 400;
+
+  --paragrafomd-size: 14px;
+  --paragrafomd-line: 170%;
+  --paragrafomd-weight: 100;
+
+  --paragrafo-size: 12px;
+  --paragrafo-line: 170%;
+  --paragrafo-weight: 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
