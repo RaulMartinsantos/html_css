@@ -37,13 +37,11 @@ i {
 
 #cor {
   color: #6c6c6c;
+  transition: color 0.3s;
 }
 
-.prarafragomd {
-  color: #6c6c6c;
-  font-size: var(--paragrafomd-size);
-  line-height: var(--paragrafomd-line);
-  font-weight: var(--paragrafomd-line);
+#cor:hover {
+  color: var(--brand-color);
 }
 
 p {
@@ -53,9 +51,20 @@ p {
   font-weight: var(--paragrafomd-line);
 }
 
+.prarafragomd {
+  color: #6c6c6c;
+  font-size: var(--paragrafomd-size);
+  line-height: var(--paragrafomd-line);
+  font-weight: var(--paragrafomd-line);
+  transition:
+    color 0.3s,
+    text-decoration 0.3s;
+}
+
 .prarafragomd:hover {
   text-decoration: underline;
   color: var(--brand-color);
+  cursor: pointer;
 }
 
 .container img {
