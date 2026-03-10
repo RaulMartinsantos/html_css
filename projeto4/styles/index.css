@@ -37,8 +37,10 @@ a {
 }
 
 .container {
-  padding: 24px;
+  padding: 24px 0px 32px;
   height: 500px;
+  width: min(1600px, 97vw);
+  margin: auto;
 
   display: grid;
   grid-template-areas:
@@ -59,7 +61,7 @@ a {
 }
 
 h2 {
-  font: var(--h2);
+  font: var(--text-sm);
   display: inline;
   padding: 2px 4px;
   background-color: var(--brand-color-dark);
@@ -101,40 +103,69 @@ div p {
   background-position: center;
 }
 
+.mid {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+  width: min(1600px, 97vw);
+  margin: auto;
+  justify-content: space-between;
+}
+
+h3,
+p {
+  padding-top: 4px;
+  font: var(--text-sm);
+}
+
 .container2 {
   height: 300px;
+  width: min(1600px, 97vw);
+  margin: auto;
   display: grid;
   grid-template-areas: "card6 card7 card8 card9";
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   gap: 12px;
-  padding: 12px 12px;
+  padding: 24px 0px;
 }
 
-#img6 {
+#img6,
+img h2 {
+  padding: 6px;
+  display: inline;
   grid-area: card6;
   background: url(../imgs/Image\ 06.png);
   background-size: cover;
   background-position: center;
 }
 
-#img7 {
+#img7,
+img h2 {
+  padding: 6px;
+  display: inline;
   grid-area: card7;
   background: url(../imgs/Image\ 07.png);
   background-size: cover;
   background-position: center;
 }
 
-#img8 {
+#img8,
+img h2 {
+  padding: 6px;
+  display: inline;
   grid-area: card8;
   background: url(../imgs/Image\ 08.png);
   background-size: cover;
   background-position: center;
 }
 
-#img9 {
+#img9,
+img h2 {
+  padding: 6px;
+  display: inline;
   grid-area: card9;
   background: url(../imgs/Image\ 09.png);
   background-size: cover;
   background-position: center;
 }
+
