@@ -1,1 +1,140 @@
 @import url(global.css);
+
+.container1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+#menu {
+  margin-right: auto;
+}
+
+#menus:hover {
+  color: var(--brand-color-light);
+  cursor: pointer;
+}
+
+#logo {
+  margin: auto;
+}
+
+#busca {
+  margin-left: auto;
+}
+
+nav {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+  padding: 10px 0px;
+  justify-content: space-evenly;
+}
+
+a {
+  font: var(--text-sm);
+}
+
+.container {
+  padding: 24px;
+  height: 500px;
+
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card1 card4 card5";
+  grid-template-columns: 50% 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.noticia {
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+h2 {
+  font: var(--h2);
+  display: inline;
+  padding: 2px 4px;
+  background-color: var(--brand-color-dark);
+  border-radius: 4px;
+}
+
+div p {
+  font: var(--text-span);
+}
+
+#img1 {
+  grid-area: card1;
+  background: url(../imgs/Image\ 01.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img2 {
+  background: url(../imgs/Image\ 02.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img3 {
+  background: url(../imgs/Image\ 03.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img4 {
+  background: url(../imgs/Image\ 04.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img5 {
+  background: url(../imgs/Image\ 05.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container2 {
+  height: 300px;
+  display: grid;
+  grid-template-areas: "card6 card7 card8 card9";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 12px;
+  padding: 12px 12px;
+}
+
+#img6 {
+  grid-area: card6;
+  background: url(../imgs/Image\ 06.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img7 {
+  grid-area: card7;
+  background: url(../imgs/Image\ 07.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img8 {
+  grid-area: card8;
+  background: url(../imgs/Image\ 08.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#img9 {
+  grid-area: card9;
+  background: url(../imgs/Image\ 09.png);
+  background-size: cover;
+  background-position: center;
+}
