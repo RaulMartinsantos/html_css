@@ -223,6 +223,7 @@ img {
   grid-template-areas:
     "titulo imagem"
     "texto imagem";
+  align-items: end;
   grid-template-rows: 13% 1fr;
   grid-template-columns: 70% 1fr;
 }
@@ -256,6 +257,7 @@ img {
     "imagem titulo"
     "imagem texto";
   gap: 8px;
+  align-items: end;
   padding: 10px;
   box-sizing: border-box;
 }
