@@ -193,6 +193,13 @@ aside {
   gap: 20px;
 }
 
+#asidecontainer,
+#asidecontainer1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 18px;
+}
+
 img {
   height: 200px;
   width: 200px;
