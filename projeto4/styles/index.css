@@ -9,6 +9,8 @@
 
 #menu {
   margin-right: auto;
+  height: auto;
+  width: auto;
 }
 
 #menus:hover {
@@ -46,7 +48,7 @@ a {
   grid-template-areas:
     "card1 card2 card3"
     "card1 card4 card5";
-  grid-template-columns: 50% 1fr 1fr;
+  grid-template-columns: 54% 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
   gap: 12px;
@@ -104,7 +106,9 @@ div p {
 }
 
 .mid {
+  font: var(--text-sm);
   display: flex;
+  flex: 1;
   border-top: 1px solid rgba(255, 255, 255, 0.158);
   width: min(1600px, 97vw);
   margin: auto;
@@ -169,3 +173,103 @@ img h2 {
   background-position: center;
 }
 
+.mid2 {
+  margin-top: 40px;
+  font: var(--text-sm);
+  display: flex;
+  flex: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+aside {
+  display: grid;
+  grid-template-areas: "container1 container2";
+  grid-template-columns: 60% 1fr;
+  width: min(1600px, 97vw);
+  margin: auto;
+  gap: 20px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+#text-sm {
+  font: var(--text-sm);
+}
+
+#menus {
+  height: 26px;
+  width: 26px;
+}
+
+#logo {
+  height: 60px;
+  width: 220px;
+}
+
+#buscar {
+  height: 26px;
+  width: 26px;
+}
+
+.containers {
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "titulo imagem"
+    "texto imagem";
+  grid-template-rows: 13% 1fr;
+  grid-template-columns: 70% 1fr;
+}
+
+.noticias10 {
+  grid-area: titulo;
+  margin-right: auto;
+}
+
+.texto10 {
+  grid-area: texto;
+  margin-right: auto;
+}
+
+.direita {
+  grid-area: imagem;
+  margin-left: auto;
+}
+
+#ad {
+  display: block;
+  width: 99%;
+  margin: 0 auto 17px auto;
+  height: auto;
+  border-radius: 4px;
+}
+
+.gridaside {
+  display: grid;
+  grid-template-areas:
+    "imagem titulo"
+    "imagem texto";
+  gap: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.esquerda {
+  width: 90px;
+  height: 90px;
+  grid-area: imagem;
+}
+
+.noticias11 {
+  grid-area: titulo;
+}
+
+.texto11 {
+  grid-area: texto;
+}
