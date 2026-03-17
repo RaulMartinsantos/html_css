@@ -38,3 +38,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+input {
+  transition: box-shadow 0.3s;
+}
+
+input:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
+}
+
+select {
+  transition: box-shadow 0.3s;
+}
+
+select:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
+}
+
+textarea {
+  transition: box-shadow 0.3s;
+}
+
+textarea:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.178);
+}
