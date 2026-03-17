@@ -16,6 +16,7 @@ label + .radial-wrapper {
   justify-items: center;
   gap: 0.5rem;
   padding: 2rem 0.5rem 0.5rem;
+  transition: border 0.3s;
 
   & input,
   & input:focus,
@@ -26,7 +27,7 @@ label + .radial-wrapper {
   }
 
   .radial-image {
-    background-image: url(../../assets/icons/radial-default.svg);
+    background: url(../../assets/icons/radial-default.svg);
 
     width: 1.5rem;
     height: 1.5rem;
@@ -45,7 +46,7 @@ label + .radial-wrapper {
   }
 
   &:has(:checked) {
-    border: 2px solid var(--stroke-highlight);
+    border: 1.5px solid var(--stroke-highlight);
 
     & .radial-image {
       background: url(../../assets/icons/radial-checked.svg) no-repeat;
