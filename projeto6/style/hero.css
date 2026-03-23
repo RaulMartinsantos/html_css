@@ -1,8 +1,6 @@
 #hero {
   text-align: center;
 
-  border: 1px solid red;
-
   & img[src*="music"] {
     width: 12.875rem;
   }
@@ -17,7 +15,7 @@
     margin-top: 0.5rem;
   }
 
-  & #buttons {
+  .buttons {
     justify-content: center;
     margin-top: 2rem;
   }
@@ -42,7 +40,8 @@
       font-size: 2.5rem;
     }
 
-    & #buttons {
+    & .buttons {
+      margin-top: 3rem;
     }
   }
 }
