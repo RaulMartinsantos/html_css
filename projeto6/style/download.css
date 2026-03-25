@@ -1,0 +1,77 @@
+#download {
+  overflow-x: hidden;
+
+  & .card {
+    position: relative;
+    padding-bottom: 15rem;
+  }
+
+  & strong {
+    display: block;
+    padding-top: 3rem;
+
+    font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-color-primary);
+  }
+
+  & h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  & p {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  & img[src*="app-store"],
+  & img[src*="google-play"] {
+    height: auto;
+    width: 11.125rem;
+  }
+
+  & img[src*="rapaz-ouvindo-musica"] {
+    width: 14.875rem;
+    height: 20rem;
+
+    position: absolute;
+    bottom: 0%;
+    right: -16%;
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.438));
+  }
+
+  @media (width >= 80em) {
+    & .card {
+      position: relative;
+      padding: 8.75rem 0rem 8.75rem 5rem;
+    }
+
+    & .card > div {
+      max-width: 40rem;
+    }
+
+    & img[src*="app-store"],
+    & img[src*="google-play"] {
+      height: 3.89375rem;
+      width: 12.375rem;
+    }
+
+    & .grid {
+      display: flex;
+      gap: 1rem;
+      justify-items: center;
+    }
+
+    & img[src*="rapaz-ouvindo-musica"] {
+    width: 29.125rem;
+    height: 39.1875rem;
+
+    position: absolute;
+    bottom: 0%;
+    right: -4%;
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.438));
+  }
+  }
+}
