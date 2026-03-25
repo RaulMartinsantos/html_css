@@ -9,7 +9,7 @@ a.social {
   background-clip: initial;
 
   &[area-label="tiktok"] {
-    background-image: url(../assets/icons/tiktok.svg);
+    background: url(../assets/icons/tiktok.svg) no-repeat;
   }
 
   &:hover[area-label="tiktok"] {
@@ -17,7 +17,7 @@ a.social {
   }
 
   &[area-label="instagram"] {
-    background-image: url(../assets/icons/instagram.svg);
+    background: url(../assets/icons/instagram.svg) no-repeat;
   }
 
   &[area-label="instagram"]:hover {
@@ -25,7 +25,7 @@ a.social {
   }
 
   &[area-label="discord"] {
-    background-image: url(../assets/icons/discord.svg);
+    background: url(../assets/icons/discord.svg) no-repeat;
   }
 
   &[area-label="discord"]:hover {
@@ -33,7 +33,7 @@ a.social {
   }
 
   &[area-label="twitter"] {
-    background-image: url(../assets/icons/twitter.svg);
+    background: url(../assets/icons/twitter.svg) no-repeat;
   }
 
   &[area-label="twitter"]:hover {
