@@ -1,12 +1,13 @@
-header {
+.container {
   max-width: 80rem;
-  width: 100%;
+  margin: 0 auto;
   padding: 1.25rem 2rem;
+}
 
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   & img {
     width: 2rem;
     height: 2rem;
@@ -17,7 +18,7 @@ header {
     transform: rotate(90deg);
   }
 
-  & img[src*="shopping"]:hover {
+  & a:hover img[src*="shopping"] {
     transform: rotate(30deg);
   }
 
@@ -42,5 +43,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 500ms;
   }
 }
