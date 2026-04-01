@@ -94,3 +94,15 @@ footer {
     }
   }
 }
+
+@media (width < 985px) {
+  footer {
+    flex-flow: column;
+    align-items: start;
+
+    & nav {
+      flex-flow: column;
+      padding: 3rem 0;
+    }
+  }
+}
