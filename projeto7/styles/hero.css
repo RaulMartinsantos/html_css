@@ -124,9 +124,7 @@ section.hero {
       max-width: 2.5rem;
       right: 0;
       bottom: 35%;
-
-      transform: translateX(400%);
-      animation: slidein 2.2s 800ms ease forwards;
+      animation: slidein-stars2 2.2s 800ms ease both;
     }
   }
 }
@@ -136,6 +134,18 @@ section.hero {
     transform: translateX(-25px);
   }
 
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidein-stars2 {
+  0% {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
   100% {
     transform: translateX(0);
   }
@@ -213,5 +223,15 @@ section.hero {
 
   100% {
     transform: translateY(-15rem);
+  }
+}
+
+@media (width < 985px) {
+  section.hero {
+    flex-flow: column-reverse;
+
+    & img[src*="stars-2"] {
+      animation: slidein-stars2 2.2s 800ms ease both;
+    }
   }
 }
