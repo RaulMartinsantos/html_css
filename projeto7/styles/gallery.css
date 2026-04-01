@@ -105,3 +105,21 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media (width < 985px) {
+  section.gallery {
+    & .content {
+      grid-template-areas:
+        "A"
+        "B"
+        "C"
+        "D";
+    }
+
+    & figure {
+      & > img {
+        height: 100%;
+      }
+    }
+  }
+}
